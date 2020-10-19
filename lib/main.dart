@@ -1,7 +1,6 @@
-import 'package:designcode/model/sidebar.dart';
-import 'package:flutter/material.dart';
 
-import 'components/sidebar_row.dart';
+import 'package:designcode/screens/sidebar_screen.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        body: SidebarRow(item: sidebarItem[1]),
+        body: SidebarScreen(),
       ),
     );
   }

@@ -65,3 +65,19 @@ var kCallOutLabelStyle = TextStyle(
     fontFamily: Platform.isIOS ? "SF Pro Text" : null,
     decoration: TextDecoration.none
 );
+
+var kSearchPlaceHolderStyle = TextStyle(
+    fontSize: 12.0,
+    fontWeight: FontWeight.normal,
+    color: kSecondaryLabelColor,
+    fontFamily: Platform.isIOS ? "SF Pro Text" : null,
+    decoration: TextDecoration.none
+);
+
+var kSeecoondaryCallOutLabelStyle = TextStyle(
+    fontSize: 16.0,
+    fontWeight: FontWeight.normal,
+    color: kSecondaryLabelColor,
+    fontFamily: Platform.isIOS ? "SF Pro Text" : null,
+    decoration: TextDecoration.none
+);
