@@ -51,6 +51,21 @@ var sidebarItem = [
           ]
       ),
       icon: Icon(
+        Icons.credit_card,
+        color: Colors.white,
+      )
+  ),
+  SidebarItem(
+      title: "Settings",
+      backgraund: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Color(0xFF4E62CC),
+            Color(0xFF202A78)
+          ]
+      ),
+      icon: Icon(
         Icons.settings,
         color: Colors.white,
       )
