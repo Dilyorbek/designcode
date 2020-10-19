@@ -41,11 +41,11 @@ flutter:
   uses-material-design: true
   assets:
     - asset/badges/
-    - asset/ceertificates/
+    - asset/certificates/
     - asset/icons/
     - asset/illustrations/
     - asset/images/
-    - asset/logoos/
+    - asset/logos/
   fonts:
     - family: SF Pro Text
       fonts:

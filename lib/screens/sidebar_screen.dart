@@ -44,7 +44,7 @@ class SidebarScreen extends StatelessWidget {
                       SizedBox(height: 4.0),
                       Text(
                         "License ends on 1 Jan, 2021",
-                        style: kSearchPlaceHolderStyle,
+                        style: kSearchPlaceholderStyle,
                       ),
                     ],
                   ),
@@ -81,7 +81,7 @@ class SidebarScreen extends StatelessWidget {
                   ),
                   Text(
                     "Log Out",
-                    style: kSeecoondaryCallOutLabelStyle,
+                    style: kSecondaryCalloutLabelStyle,
                   )
                 ],
               )

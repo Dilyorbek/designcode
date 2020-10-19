@@ -1,6 +1,7 @@
 import 'package:designcode/constants.dart';
 import 'package:designcode/model/sidebar.dart';
 import 'package:flutter/material.dart';
+import '../constants.dart';
 
 
 class SidebarRow extends StatelessWidget {
@@ -27,7 +28,7 @@ class SidebarRow extends StatelessWidget {
           child: Center(
             child: Text(
               item.title,
-              style: kCallOutLabelStyle,
+              style: kCalloutLabelStyle,
             ),
           ),
         ),

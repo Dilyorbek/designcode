@@ -1,6 +1,8 @@
-
-import 'package:designcode/screens/sidebar_screen.dart';
+import 'package:designcode/constants.dart';
+import 'package:designcode/model/course.dart';
 import 'package:flutter/material.dart';
+
+import 'components/cards/recent_course_card.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +20,10 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        body: SidebarScreen(),
+        body: SafeArea(
+            child: RecentCourseCard(
+          course: recentCourses[0],
+        )),
       ),
     );
   }
