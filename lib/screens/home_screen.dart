@@ -57,59 +57,61 @@ class _HomeScreen extends State<HomeScreen> with TickerProviderStateMixin {
         child: Stack(
           children: [
             SafeArea(
-              child: Column(
-                children: [
-                  HomeScreenNavBar(
-                    toggleAnimation: () {
-                      setState(() {
-                        sidebarHidden = !sidebarHidden;
-                      });
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    HomeScreenNavBar(
+                      toggleAnimation: () {
+                        setState(() {
+                          sidebarHidden = !sidebarHidden;
+                        });
 
-                      sidebarAnimationCoontroller.forward();
-                    },
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Text(
-                          "Recents",
-                          style: kLargeTitleStyle,
-                        ),
-                        SizedBox(
-                          height: 5.0,
-                        ),
-                        Text(
-                          "23 courses, more coming",
-                          style: kSubtitleStyle,
-                        ),
-                      ],
+                        sidebarAnimationCoontroller.forward();
+                      },
                     ),
-                  ),
-                  SizedBox(
-                    height: 20.0,
-                  ),
-                  RecentCourseList(),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      left: 20.0,
-                      right: 20.0,
-                      top: 25.0,
-                      bottom: 16.0,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text(
+                            "Recents",
+                            style: kLargeTitleStyle,
+                          ),
+                          SizedBox(
+                            height: 5.0,
+                          ),
+                          Text(
+                            "23 courses, more coming",
+                            style: kSubtitleStyle,
+                          ),
+                        ],
+                      ),
                     ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Text(
-                          "Explore",
-                          style: kTitle1Style,
-                        ),
-                      ],
+                    SizedBox(
+                      height: 20.0,
                     ),
-                  ),
-                  ExploreCourseList(),
-                ],
+                    RecentCourseList(),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        left: 20.0,
+                        right: 20.0,
+                        top: 25.0,
+                        bottom: 16.0,
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text(
+                            "Explore",
+                            style: kTitle1Style,
+                          ),
+                        ],
+                      ),
+                    ),
+                    ExploreCourseList(),
+                  ],
+                ),
               ),
             ),
             ContinueWatchingScreen(),

@@ -1,3 +1,5 @@
+import 'package:designcode/constants.dart';
+import 'package:designcode/model/course.dart';
 import 'package:designcode/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 

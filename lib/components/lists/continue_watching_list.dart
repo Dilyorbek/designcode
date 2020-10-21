@@ -15,7 +15,7 @@ class _ContinueWatchingListState extends State<ContinueWatchingList> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: continueWatchingCourses.map(
-            (course) {
+        (course) {
           var index = continueWatchingCourses.indexOf(course);
           return Container(
             width: 7.0,
@@ -37,8 +37,11 @@ class _ContinueWatchingListState extends State<ContinueWatchingList> {
           width: double.infinity,
           child: PageView.builder(
             itemBuilder: (context, index) {
-              return ContinueWatchingCard(
-                course: continueWatchingCourses[index],
+              return Opacity(
+                opacity: currentPage == index ? 1.0 : 0.5,
+                child: ContinueWatchingCard(
+                  course: continueWatchingCourses[index],
+                ),
               );
             },
             itemCount: continueWatchingCourses.length,
