@@ -5,16 +5,14 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 
 class DrawerToggleButton extends StatelessWidget {
-  const DrawerToggleButton({
-    Key key,
-  }) : super(key: key);
+  const DrawerToggleButton({Key key, @required this.toggleAnimation}) : super(key: key);
+
+  final Function toggleAnimation;
 
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-        onPressed: () {
-          print("Sidebar button pressed");
-        },
+        onPressed: toggleAnimation,
         materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
         highlightColor: Colors.transparent,
         splashColor: Colors.transparent,

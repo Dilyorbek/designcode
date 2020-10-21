@@ -1,6 +1,3 @@
-
-
-
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
@@ -8,6 +5,10 @@ import 'drawer_toggle_button.dart';
 import 'search_text_field.dart';
 
 class HomeScreenNavBar extends StatelessWidget {
+  HomeScreenNavBar({Key key, @required this.toggleAnimation}) : super(key: key);
+
+  final Function toggleAnimation;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -15,7 +16,7 @@ class HomeScreenNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          DrawerToggleButton(),
+          DrawerToggleButton(toggleAnimation: toggleAnimation),
           SearchTextField(),
           Icon(
             Icons.notifications,
