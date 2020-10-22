@@ -90,7 +90,7 @@ class RecentCourseCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(18.0),
               boxShadow: [BoxShadow(color: kShadowColor, offset: Offset(0, 4), blurRadius: 16.0)],
             ),
-            padding: EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(12.0),
           ),
         ),
       ],
