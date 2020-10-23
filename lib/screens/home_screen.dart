@@ -4,7 +4,6 @@ import 'package:designcode/components/lists/recent_course_list.dart';
 import 'package:designcode/screens/continue_watching_screen.dart';
 import 'package:designcode/screens/sidebar_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 import '../constants.dart';
 
