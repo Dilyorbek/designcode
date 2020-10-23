@@ -1,18 +1,16 @@
-
 import 'package:designcode/model/course.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants.dart';
 
-class ContinueWatchingCard extends StatelessWidget {
-  const ContinueWatchingCard({Key key, this.course}) : super(key: key);
+class CompletedCourseCard extends StatelessWidget {
+  const CompletedCourseCard({Key key, this.course}) : super(key: key);
 
   final Course course;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: Alignment.topCenter,
       child: Stack(
         alignment: Alignment.topRight,
         children: [
@@ -52,7 +50,7 @@ class ContinueWatchingCard extends StatelessWidget {
                               Image.asset(
                                 'asset/illustrations/${course.illustration}',
                                 fit: BoxFit.cover,
-                                height: 110,
+                                height: 140,
                               ),
                             ],
                           ),
@@ -90,7 +88,7 @@ class ContinueWatchingCard extends StatelessWidget {
             height: 60.0,
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(18.0),
+              borderRadius: BorderRadius.circular(16.0),
               boxShadow: [
                 BoxShadow(color: kShadowColor, offset: Offset(0, 4), blurRadius: 16.0),
               ],
